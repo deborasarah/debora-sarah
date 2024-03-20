@@ -2,7 +2,9 @@
 
 <h1>Cadastro</h1>
 
-<form>
+<form action="http://191.252.62.149:8080/pweb/salvar.jsp" method="GET">
+
+
     Login * : <br>
     <input type="password" required name="login"><br>
 
@@ -27,6 +29,19 @@
     <input type="checkbox" value="Roupas" name="interesse">Roupas <br>
     <input type="checkbox" value="Bolsas" name="interesses">Bolsas <br>
     <input type="checkbox" value="Sapatos" name="interesses">Sapatos <br>
+
+    Estado: <br>
+    <select name="estado"
+        <option selected >selecione o estado</option>
+        <option value="CE">Ceára</option>
+        <option value="PI">Piauí</option>
+        <option value="SP">São Paulo</option>
+
+</select><br>
+
+    OBSERVAÇÕES: <br>
+    <textares cols="80" rows="5" name="observações"></textares>
+</br>
 
     <input type="button" value="Enviar">
 
