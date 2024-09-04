@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>BOX MODEL</title>
+    <style type="text/css">
+        body {
+            background: #d6d6d6;
+        }
+        
+        .noticia {
+            font-family: "Open Sans", Arial, sans-serif;
+            background-color: white;
+            color: #333;
+            font-size: 16px;
+            padding-left: 15px;
+            padding-right: 10px;
+            text-align: justify;
+            line-height: 24px;
+            width: 200px;
+            margin: 20px;
+            float: left;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .imagem, .imagem-grande {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            padding: 10px 0; 
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        
+        .lorem-ipsum {
+            clear: both;
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="noticia">
+            <img class="imagem" src="imagem1.png" alt="Image Description">
+            <p>Resumo</p>
+        </div>
+        
+        <div class="noticia">
+            <img class="imagem" src="imagem2.png" alt="Image Description">
+            <p>Resumo</p>
+        </div>
+
+        <div class="noticia">
+            <img class="imagem-grande" src="imagem3.png" alt="Large Image 1">
+            <p>Resumo</p>
+        </div>
+
+        <div class="noticia">
+            <img class="imagem-grande" src="imagem4.png" alt="Large Image 2">
+            <p>Resumo</p>
+        </div>
+
+        <div class="noticia">
+            <img class="imagem-grande" src="imagem5.png" alt="Large Image 3">
+            <p>Resumo</p>
+        </div>
+    </div>
+    
+    <div class="lorem-ipsum">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+</body>
+</html>
